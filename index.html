@@ -262,7 +262,7 @@
                 const src = e.target.offsetParent.previousElementSibling.getAttribute("src");
                 // use a data attribute to get the right item to display for the description
                 const descNum = e.target.offsetParent.previousElementSibling.dataset.desc;
-                document.querySelector(".modal-img").src;
+                document.querySelector(".modal-img").src = src;
                 document.querySelector('.modal-description').innerHTML = portfolioDesc[descNum];
                 const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
                 myModal.show();
